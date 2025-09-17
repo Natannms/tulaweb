@@ -1,5 +1,5 @@
 
-import React, { useState } from "react";
+import { useState } from "react";
 import { useSignUp } from "@clerk/clerk-react";
 import { useSearchParams, useNavigate } from "react-router-dom";
 import { acceptInvite } from "./services/inviteService";

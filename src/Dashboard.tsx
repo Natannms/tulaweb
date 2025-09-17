@@ -1,16 +1,9 @@
 // src/Dashboard.tsx
-import React, { useState } from "react";
 import { useUser, useClerk } from "@clerk/clerk-react";
-import { createInvite } from "./services/inviteService";
 
 export default function Dashboard() {
   const { user } = useUser();
   const { signOut } = useClerk();
-
-  const [inviteLink, setInviteLink] = useState<string | null>(null);
-  const [loading, setLoading] = useState(false);
-
-
   return (
     <div
       style={{

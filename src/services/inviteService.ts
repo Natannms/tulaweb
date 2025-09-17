@@ -1,6 +1,6 @@
 // src/services/invitesService.ts
 import { db } from "../firebase";
-import { addDoc, arrayUnion, collection, doc, getDoc, getDocs, query, serverTimestamp, updateDoc, where } from "firebase/firestore";
+import { addDoc, arrayUnion, collection, getDocs, query, serverTimestamp, updateDoc, where } from "firebase/firestore";
 import { INVITES_COLL, ORG_COLL } from "../colls";
 
 
